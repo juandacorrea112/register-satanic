@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url('fondo\ muerte.jpg');
+
+  /* para ajustar la imgen de fondo del body
+  
+    background-size: cover;
+    background-position: center;*/
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;  
+}
+
+header > nav {
+  padding: 1rem;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-weight: 800;  
+  font-style: oblique;
+  text-shadow: 0 0 10px black;
+}
+
+.opciones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a:hover {
+  border-radius: 50px;
+  text-shadow: 0 0 10px #313131;
+}
+
+a:focus {
+  color: #464646;
+  text-decoration: 0 0 15px #fff;
+}
+
+header > h1 {
+  width: 80%;
+  font-size: 3rem;
+  color: #fff;
+  font-style: italic;
+  font-family: 'Shadows Into Light', cursive;
+  position: absolute;
+  transform: translate(-281px, 10px);  
+}
+
+hr {
+  width: 90%;
+  text-align: center;
+  margin: 2rem ;
+  height: 0.2rem;
+  background: linear-gradient(-40deg, #4a4a4a, #8d8d8d,rgb(175, 175, 175));
+}
+
+main {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main > img {
+  border-radius: 15px;
+  box-shadow: 0px 0px 26px #ffffff;
+  height: 460px;
+}
+
+main > img:hover {
+  filter: invert(50);  
+}
+
+#frm-register {
+    width: 25rem;
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: groove 5px rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgb(69 69 69);
+    padding: 1rem;
+    position: absolute;
+    transform: translate(10px, 53px);
+}
+
+.pentagramacon{
+  height: 170px;
+  width: 180px;
+}
+
+.pentagramacon img {
+  height: 170px;
+  width: 180px;
+}
+
+#frm-register #img-form {
+  width: 50%;
+}
+
+#frm-register input {
+  width: 80%;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  padding-left: 0.5rem;
+}
+
+.buttons {
+  margin-top: 1rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.buttons a {
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px blueviolet;
+  text-decoration: none;
+}
+
+.buttons > a:hover {
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.myButton {
+	box-shadow: 0px -2px 7px #d2d2d2;
+	background:linear-gradient(to bottom, #2c2c2c 5%, #575757 100%);	
+	border-radius:15px;
+	border:3px solid #040404;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:14px 40px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f2f2f;
+  margin: 1rem;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #b0b0b0 5%, #1a1a1a 100%);
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+footer{
+  color: #ffff;
+  display: flex;
+  box-shadow: 0px 0px 26px #ffffff;
+  margin-top: 9%;
+  position: absolute;
+  transform: translate(3px, 842px);
+  width: 100%;
+  justify-content: center;
+}
+.containerV{
+  position: absolute;
+  transform: translate(121px, 181px)
+}
+#validacion{
+  visibility:hidden;
+  color: rgb(0, 255, 0);
+}
+#negacion{
+  visibility:hidden;
+  color: red;
+}
+#negacion2{
+  visibility:hidden;
+  color: red;
+}
+.containerV2{
+  position: absolute;
+  transform: translate(123px, 241px);
+}
+#validacion2{
+  visibility:hidden;
+  color: rgb(0, 255, 0);
+}
+#caracterS{
+  position: absolute;
+  transform: translate(196%, 398%);
+  height: 44px;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+.containerP{
+  position: absolute;
+  transform: translate(122px, 301px);
+
+}
+#validacion3{
+  visibility: hidden;
+  color: rgb(0, 255, 0);
+}
+#negacion3{
+  visibility:hidden;
+  color: red;
+}
+.containerP2{
+  position: absolute;
+  transform: translate(123px, 363px);
+}
+#validacion4{
+  visibility: hidden;
+  color: rgb(0, 255, 0);
+}
+#negacion4{
+  visibility: hidden;
+  color: red;
+}
+
+/* ======================== L O G I N ==========================*/
+#validacionuser{
+  visibility: hidden;
+  color: rgb(0, 255, 0);
+}
+
+#negacionuser{
+  visibility:hidden;
+  color: red;
+}
+.frm-login{
+  width: 25rem;
+  height: 29rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: groove 5px rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgb(69 69 69);
+  padding: 1rem;
+  position: absolute;
+  transform: translate(10px, 53px);
+}
+
+.frm-login input{
+  width: 80%;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  padding-left: 0.5rem;
+}
+
+/*================== R E S P O N S I V E   R E G I S T E R (1366px)==================*/
+@media screen and (max-width: 1366px) {
+  body{
+    background-size: cover;
+    background-position: center;
+  }
+  header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  header h1{
+    position: absolute;
+    transform: translate(34px, 18px);
+  }
+  #frm-register{
+    width: 28rem;
+    height: 37rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: groove 5px rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgb(69 69 69);
+    padding: 1rem;
+    position: absolute;
+    transform: translate(10px, 45px);
+  }
+}
+
+/*======================R E S P O N S I V E  R E G I S T E R (900px)=================*/
+
+@media screen and (max-width: 900px){
+  header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  header h1{
+    position: absolute;
+    transform: translate(30px, 24px);
+  }
+  #frm-register{
+    position: absolute;
+    transform: translate(10px, 70px);
+    width: 26rem;
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: groove 5px rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgb(69 69 69);
+    padding: 1rem;
+  }
+}
+
+/*===================== R E S P O N S I V E   R E G I S T E R (700PX) =====================*/
+
+@media screen and (max-width: 700px) {
+  header h1{
+    position: absolute;
+    transform: translate(34px, 20px);
+    width: 80%;
+    font-size: 3rem;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Shadows Into Light', cursive;
+    
+  }
+  #frm-register{
+    position: absolute;
+    transform: translate(10px, 70px);
+    width: 25rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: groove 5px rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgb(69 69 69);
+    padding: 1rem;
+  }
+}
+
+/*===================== L O G I N   R E S P O N S I V E ============================*/
+@media screen and (max-width: 900px){
+  .frm-login{
+    position: absolute;
+    transform: translate(10px, 70px);
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: groove 5px rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgb(69 69 69);
+    padding: 1rem;
+  }
+
+  .frm-login input{
+    border: none;
+    border-radius: 3px;
+  }
+}
